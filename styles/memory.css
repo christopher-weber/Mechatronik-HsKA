@@ -1,0 +1,119 @@
+/* 
+    Document   : style
+    Created on : 01.08.2013, 10:11:42
+    Author     : David
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* Content-Bereich ohne Abstand zum Rand (jQuery-Mobile Standard überschreiben) */
+.ui-content{
+/*    margin-left: 1%;
+    margin-top: 1%;*/
+    padding: 0px;} 
+.button_frame{
+    padding: 1%;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    perspective: 300px;
+    -webkit-perspective: 300px;
+    float: left;
+    
+
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    transition: all 0.5s linear;
+
+
+
+}
+.card.show {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); 
+}
+
+.face {
+    -moz-box-sizing:    border-box; /*Border innen anbringen*/
+    -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+    border: 1px solid #b0b0b0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 10%;
+
+
+}
+.face.back {
+    display: block;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.cardimage{
+    display: block;
+    max-width: 100%;
+    border-radius: 10%;
+
+}
+
+.overlay_transparent{
+    background:transparent repeat top left;
+    position:fixed;
+    top:45px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+
+.product{
+    display: block;
+    max-width: 100%;
+    border-radius: 10%;
+}
+
+.points_text{
+    text-align: center;
+    font-size: 60px;
+}
+.points_final{
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+#popup-content{
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.rules{
+    padding: 15px;
+
+}
+.ui-header .ui-title, .ui-footer .ui-title {
+
+    margin-left: 0;
+    margin-right: 0;
+
+}
+#SidePanelMemory{
+    margin-left: 0;
+    padding-left: 0;
+    border: 0;
+}
